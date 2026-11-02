@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adept Power Electronics Solutions | UPS, Railway Converters, Battery Chargers, DC-DC</title>
+<meta name="description" content="Adept Power Electronics Solutions, Mumbai: design and manufacturing of three-phase UPS, railway battery chargers and auxiliary converters, EV chargers, high-end DC-DC converters and thyristor-based 12/24 pulse rectifier systems.">
+<meta name="theme-color" content="#16133a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Adept Power Electronics Solutions",
+  "url": "https://adeptpes.in",
+  "email": "sales@adeptpes.in",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mulund West, Mumbai",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "description": "Power electronics design and manufacturing: UPS, railway converters, battery chargers, EV chargers and DC-DC converters."
+}
+</script>
+<style>
+:root{
+  --bg:#16133a;
+  --bg-2:#1d1a4b;
+  --bg-3:#25225c;
+  --text:#e9ecff;
+  --muted:#a9aed6;
+  --cyan:#2fe0d2;
+  --blue:#3b82f6;
+  --line:rgba(255,255,255,.10);
+  --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:84px 0}
+h1,h2,h3{line-height:1.2;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,3.2vw,2.3rem);margin-bottom:12px}
+.eyebrow{color:var(--cyan);font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+.lead{color:var(--muted);max-width:660px;margin-bottom:40px}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(22,19,58,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand svg{width:38px;height:38px;flex:none}
+.brand span{font-weight:600;color:var(--cyan);font-size:1.02rem;line-height:1.1}
+nav ul{display:flex;gap:26px;list-style:none}
+nav a{color:var(--muted);font-size:.93rem;transition:color .15s}
+nav a:hover{color:var(--cyan)}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid transparent;transition:transform .15s,background .15s}
+.btn-primary{background:linear-gradient(90deg,var(--cyan),var(--blue));color:#0b0a26}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:6px 12px;font-size:1rem;cursor:pointer}
+
+/* hero */
+.hero{padding:100px 0 90px;position:relative;overflow:hidden;
+  background:radial-gradient(900px 400px at 85% 0%,rgba(59,130,246,.22),transparent 60%),
+             radial-gradient(700px 400px at 0% 100%,rgba(47,224,210,.12),transparent 60%)}
+.hero h1{font-size:clamp(2.1rem,5.2vw,3.6rem);max-width:820px;margin-bottom:20px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--cyan),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:1.1rem;max-width:620px;margin-bottom:32px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:64px}
+.stat{border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;background:rgba(255,255,255,.03)}
+.stat b{display:block;font-size:1.05rem;color:var(--cyan);margin-bottom:2px}
+.stat span{color:var(--muted);font-size:.88rem}
+
+/* cards */
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:rgba(47,224,210,.5)}
+.card .ico{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;margin-bottom:16px;background:linear-gradient(135deg,rgba(47,224,210,.2),rgba(59,130,246,.25));color:var(--cyan)}
+.card .ico svg{width:24px;height:24px}
+.card h3{font-size:1.15rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem}
+.card ul{margin:12px 0 0 18px;color:var(--muted);font-size:.92rem}
+.card li{margin-bottom:4px}
+.alt{background:var(--bg-2)}
+.alt .card{background:var(--bg-3)}
+
+/* projects */
+.project{display:flex;flex-direction:column}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:16px}
+.tag{font-size:.75rem;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--cyan);background:rgba(47,224,210,.06)}
+.pnum{color:var(--cyan);font-weight:700;font-size:.8rem;letter-spacing:.12em;margin-bottom:10px}
+
+/* about */
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.checks{list-style:none}
+.checks li{padding:12px 0 12px 34px;border-bottom:1px solid var(--line);position:relative;color:var(--muted)}
+.checks li b{color:var(--text)}
+.checks li::before{content:"";position:absolute;left:0;top:17px;width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--blue))}
+.checks li::after{content:"";position:absolute;left:6px;top:21px;width:5px;height:9px;border:solid #0b0a26;border-width:0 2px 2px 0;transform:rotate(45deg)}
+
+/* contact */
+form{display:grid;gap:14px}
+label{font-size:.85rem;color:var(--muted);display:block;margin-bottom:5px}
+input,select,textarea{width:100%;background:var(--bg);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:12px 14px;font:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--cyan);outline-offset:0}
+textarea{min-height:120px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.info p{margin-bottom:16px;color:var(--muted)}
+.info b{display:block;color:var(--text)}
+.info a{color:var(--cyan)}
+.note{font-size:.8rem;color:var(--muted)}
+
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+@media(max-width:900px){
+  .g3{grid-template-columns:1fr 1fr}
+  .split{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  section{padding:60px 0}
+  .g3,.g2,.row2{grid-template-columns:1fr}
+  .menu-btn{display:block}
+  nav{position:absolute;left:0;right:0;top:68px;background:var(--bg);border-bottom:1px solid var(--line);display:none}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:0;padding:8px 20px 16px}
+  nav li a{display:block;padding:12px 0}
+  .brand span{font-size:.9rem}
+}
+</style>
+</head>
+<body>
+
+<!-- Reusable logo mark (stylised pulse/wave of dashes, in the brand gradient) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#2fe0d2"/>
+    </linearGradient>
+    <symbol id="mark" viewBox="0 0 48 48">
+      <g stroke="url(#lg)" stroke-width="5" stroke-linecap="round" fill="none">
+        <path d="M22 4 L30 12"/>
+        <path d="M34 6 L40 12"/>
+        <path d="M12 14 L26 28"/>
+        <path d="M30 18 L38 26"/>
+        <path d="M8 26 L18 36"/>
+        <path d="M24 30 L36 42"/>
+        <path d="M40 30 L44 34"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Adept Power Electronics Solutions">
+      <svg><use href="#mark"/></svg>
+      <span>Adept Power<br>Electronics Solutions</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">Menu</button>
+    <nav id="nav">
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Power electronics design and manufacturing</p>
+    <h1>Power conversion that runs <em>where it matters</em>: rails, industry and critical load.</h1>
+    <p>We design and build UPS systems, railway converters, battery chargers, EV chargers and high-end DC-DC converters, with in-house hardware, magnetics and DSP firmware.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#contact">Discuss your requirement</a>
+      <a class="btn btn-ghost" href="#projects">See our work</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>Design to production</b><span>Hardware, magnetics, firmware</span></div>
+      <div class="stat"><b>DSP-based control</b><span>Digital control on TI C2000</span></div>
+      <div class="stat"><b>Railway and industrial</b><span>Rugged, field-proven designs</span></div>
+      <div class="stat"><b>Mumbai, India</b><span>Pan-India supply and support</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="wrap">
+    <p class="eyebrow">Products</p>
+    <h2>What we build</h2>
+    <p class="lead">Standard platforms and custom-engineered units, built around fully digital control.</p>
+    <div class="grid g3">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M13 9l-3 3h4l-3 3"/></svg></div>
+        <h3>UPS Systems</h3>
+        <p>Single and three-phase online UPS with low-THD output and high overload capability.</p>
+        <ul>
+          <li>Active front end (low input harmonics)</li>
+          <li>N+1 parallel redundant inverters</li>
+          <li>Thyristor and IGBT-based options</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M9 21l2-4M15 21l-2-4M9 9h6M9 12h6"/></svg></div>
+        <h3>Railway Converters</h3>
+        <p>Converters and controllers for rolling stock and railway workshops, designed for demanding environments.</p>
+        <ul>
+          <li>Auxiliary converters</li>
+          <li>Regenerative battery chargers (RBC)</li>
+          <li>Control and monitoring electronics</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="17" height="9" rx="2"/><path d="M22 11v3M7 11v3M11 11v3"/></svg></div>
+        <h3>Battery Chargers</h3>
+        <p>Constant-current / constant-voltage chargers for lead-acid, NiCd and Li-ion banks in utility and industrial duty.</p>
+        <ul>
+          <li>Thyristor and high-frequency IGBT/SiC types</li>
+          <li>N+1 modular configurations</li>
+          <li>Charge and discharge capability</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
+        <h3>EV Chargers</h3>
+        <p>Power stages and control for AC and DC electric-vehicle charging, with grid-friendly input.</p>
+        <ul>
+          <li>Isolated, high-efficiency conversion</li>
+          <li>Smart control and monitoring</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></div>
+        <h3>High-end DC-DC Converters</h3>
+        <p>Phase-shifted full bridge, dual active bridge and resonant topologies for high power and high current.</p>
+        <ul>
+          <li>Wide input and output ranges</li>
+          <li>Bidirectional options</li>
+          <li>Custom magnetics</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2" fill="currentColor"/><circle cx="16" cy="12" r="2" fill="currentColor"/><circle cx="10" cy="18" r="2" fill="currentColor"/></svg></div>
+        <h3>Controllers and Monitoring</h3>
+        <p>Control boards and firmware for thyristor rectifiers, ESP power supplies and battery systems, with Modbus communication.</p>
+        <ul>
+          <li>ESP spark-control boards</li>
+          <li>Battery and earth-leakage monitors</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Selected work</p>
+    <h2>Projects we've delivered</h2>
+    <p class="lead">A sample of recent engineering. Customer details are withheld under NDA; technical discussions are available on request.</p>
+    <div class="grid g2">
+      <article class="card project">
+        <div class="pnum">01</div>
+        <h3>Three-phase UPS with active front end and N+1 paralleling</h3>
+        <p>Three-phase online UPS with a PWM active front end for near-unity power factor and low input harmonics, feeding inverter modules that operate in parallel redundant (N+1) configuration with load sharing over CAN.</p>
+        <div class="tags"><span class="tag">Active front end</span><span class="tag">N+1 parallel</span><span class="tag">Low THD</span><span class="tag">DSP control</span></div>
+      </article>
+      <article class="card project">
+        <div class="pnum">02</div>
+        <h3>Railway regenerative battery chargers (RBC)</h3>
+        <p>Battery chargers with regenerative discharge for railway battery conditioning, with precise CC/CV control and energy return to the grid instead of burning it in a resistive load.</p>
+        <div class="tags"><span class="tag">Railway</span><span class="tag">Regenerative</span><span class="tag">CC / CV</span><span class="tag">Battery conditioning</span></div>
+      </article>
+      <article class="card project">
+        <div class="pnum">03</div>
+        <h3>Auxiliary converter for railway</h3>
+        <p>Rugged auxiliary power converter for railway use, engineered for wide input variation, isolation requirements and the environmental stresses of rail service.</p>
+        <div class="tags"><span class="tag">Railway</span><span class="tag">Isolated DC-DC / inverter</span><span class="tag">Rugged design</span></div>
+      </article>
+      <article class="card project">
+        <div class="pnum">04</div>
+        <h3>High-current thyristor 12 / 24 pulse systems</h3>
+        <p>Phase-controlled thyristor rectifier systems in 12 and 24 pulse configurations for high-current DC loads, delivering reduced input harmonics, with digital firing control and protection.</p>
+        <div class="tags"><span class="tag">12 / 24 pulse</span><span class="tag">High current</span><span class="tag">Thyristor</span><span class="tag">Low harmonics</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <h2>Engineering support, end to end</h2>
+    <p class="lead">Bring us a specification, an idea or an existing product that needs improving.</p>
+    <div class="grid g3">
+      <article class="card"><h3>Custom product design</h3><p>From specification and topology selection through simulation, PCB design, prototyping and testing.</p></article>
+      <article class="card"><h3>Firmware and control</h3><p>Digital control firmware for three-phase converters, inverters and rectifiers on DSP platforms, including communication and PC tools.</p></article>
+      <article class="card"><h3>Magnetics design</h3><p>Transformers, inductors and chokes designed and specified for your converter, with attention to loss, thermals and manufacturability.</p></article>
+      <article class="card"><h3>Technology transfer</h3><p>Complete documentation, firmware and know-how handover so you can manufacture under your own brand.</p></article>
+      <article class="card"><h3>Controller indigenisation</h3><p>Replacing imported control boards with locally supported, drop-in compatible designs.</p></article>
+      <article class="card"><h3>Manufacturing and support</h3><p>Production of control boards and complete units, commissioning support and after-sales service.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="alt">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">About us</p>
+      <h2>An engineering-first power electronics company</h2>
+      <p class="lead" style="margin-bottom:0">Adept Power Electronics Solutions is based in Mumbai. We are a hands-on team that designs, builds and supports power conversion equipment, and the person who designs your product is the person you talk to.</p>
+    </div>
+    <ul class="checks">
+      <li><b>In-house design.</b> Hardware, magnetics and firmware under one roof.</li>
+      <li><b>Digital control expertise.</b> Three-phase converters on modern DSPs.</li>
+      <li><b>Proven in the field.</b> Thousands of ESP control boards supplied to thyristor-based systems.</li>
+      <li><b>Confidential by default.</b> Your design and IP stay yours.</li>
+      <li><b>Responsive.</b> Direct access to the engineers.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Tell us what you need</h2>
+      <p class="lead">Share your power rating, input and output, and application. We'll respond with a technical discussion and a proposal.</p>
+      <form id="enq">
+        <div class="row2">
+          <div><label for="n">Name</label><input id="n" required></div>
+          <div><label for="c">Company</label><input id="c"></div>
+        </div>
+        <div class="row2">
+          <div><label for="e">Email</label><input id="e" type="email" required></div>
+          <div><label for="p">Phone</label><input id="p" type="tel"></div>
+        </div>
+        <div>
+          <label for="t">Interested in</label>
+          <select id="t">
+            <option>UPS</option>
+            <option>Railway converters</option>
+            <option>Battery chargers</option>
+            <option>EV charger</option>
+            <option>DC-DC converter</option>
+            <option>Thyristor / 12-24 pulse system</option>
+            <option>Custom design / technology transfer</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div><label for="m">Requirement</label><textarea id="m" placeholder="Power rating, input/output, application, quantity..."></textarea></div>
+        <button class="btn btn-primary" type="submit">Send enquiry</button>
+        <p class="note">This opens your email app with the enquiry filled in, addressed to us.</p>
+      </form>
+    </div>
+    <div class="info card" style="margin-top:44px">
+      <p><b>Email</b><a href="mailto:sales@adeptpes.in">sales@adeptpes.in</a></p>
+      <p id="phoneBox" style="display:none"><b>Phone / WhatsApp</b><a id="phoneLink" href="#"></a></p>
+      <p><b>Location</b>Mulund West, Mumbai, Maharashtra, India</p>
+      <p style="margin-bottom:0"><b>Hours</b>Monday to Saturday</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr"></span> Adept Power Electronics Solutions. All rights reserved.</span>
+    <span>adeptpes.in</span>
+  </div>
+</footer>
+
+<script>
+  // ---- Edit these ----
+  var PHONE = "";            // e.g. "+919876543210" (digits with country code). Leave empty to hide.
+  var PHONE_DISPLAY = "";    // e.g. "+91 98765 43210"
+  var EMAIL = "sales@adeptpes.in";
+  // --------------------
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  if (PHONE) {
+    document.getElementById("phoneBox").style.display = "block";
+    var a = document.getElementById("phoneLink");
+    a.href = "https://wa.me/" + PHONE.replace(/\D/g, "");
+    a.textContent = PHONE_DISPLAY || PHONE;
+  }
+  document.getElementById("menuBtn").onclick = function () {
+    document.getElementById("nav").classList.toggle("open");
+  };
+  document.querySelectorAll("nav a").forEach(function (l) {
+    l.onclick = function () { document.getElementById("nav").classList.remove("open"); };
+  });
+  document.getElementById("enq").onsubmit = function (ev) {
+    ev.preventDefault();
+    var g = function (id) { return document.getElementById(id).value; };
+    var body = "Name: " + g("n") + "\nCompany: " + g("c") + "\nPhone: " + g("p") +
+               "\nEmail: " + g("e") + "\nInterested in: " + g("t") + "\n\n" + g("m");
+    location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent("Website enquiry: " + g("t")) +
+                    "&body=" + encodeURIComponent(body);
+  };
+</script>
+</body>
+</html>
