@@ -16,6 +16,7 @@
 <!-- ===== SITE SETTINGS: fill these in, then upload ===== -->
 <script>
   var SITE = {
+    GOOGLE_TAG: "GTM-WKJDVL9S", // Google tag container (from "Set up a Google tag")
     GA_ID: "",           // Google Analytics 4 Measurement ID, e.g. "G-ABC123XYZ"
     ADS_ID: "",          // Google Ads tag ID (optional), e.g. "AW-123456789"
     WEB3FORMS_KEY: "0d6a308b-d6bb-402e-8e51-f92f7ee77f06"    // Access key from web3forms.com (sent to sales@adeptpes.in)
@@ -26,11 +27,13 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
   (function () {
-    var first = SITE.GA_ID || SITE.ADS_ID;
+    var first = SITE.GOOGLE_TAG || SITE.GA_ID || SITE.ADS_ID;
     if (!first) return;
     var s = document.createElement("script");
     s.async = true;
-    s.src = "https://www.googletagmanager.com/gtag/js?id=" + first;
+    s.src = first.indexOf("GTM-") === 0
+      ? "https://www.googletagmanager.com/gtm.js?id=" + first
+      : "https://www.googletagmanager.com/gtag/js?id=" + first;
     document.head.appendChild(s);
     gtag("js", new Date());
     if (SITE.GA_ID) gtag("config", SITE.GA_ID);
